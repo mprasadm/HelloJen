@@ -9,6 +9,6 @@ node {
 		bat "mvn package"						
     }
 	stage ('RUN') {    					
-		bat "java -jar /target/java-archive-1.0-SNAPSHOT.jar"						
+		bat "java -jar target/java-archive-1.0-SNAPSHOT.jar"						
     }
 }
