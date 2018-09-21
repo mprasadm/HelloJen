@@ -5,8 +5,8 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                withJava(java : 'JAVA_SE_10_2') {
-                    sh 'javac HelloJen.java'
+                withJava(java : 'maven_3_5_4') {
+                    sh 'mvn package'
                 }
             }
         }
